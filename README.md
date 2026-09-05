@@ -11,6 +11,18 @@ Eigene vis-2-Widgets für ioBroker (privates Projekt).
 
 ## Installation
 
+### Direkt aus GitHub (empfohlen)
+
+In der ioBroker-Admin-Oberfläche: Adapter → GitHub-Symbol (oben) → Tab "Benutzerdefiniert" → als URL eintragen:
+
+```
+https://github.com/Lordener/iobroker.lordener-widgets
+```
+
+Damit installiert/aktualisiert ioBroker den Adapter direkt aus diesem Repo (kein manuelles Kopieren/Zip nötig). Wichtig: Der Repo-Name muss exakt zum npm-Paketnamen (`iobroker.lordener-widgets`, mit Punkt) passen, sonst schlägt die Installation mit Exit-Code 25 fehl.
+
+### Manuell per ZIP
+
 1. Repo als ZIP herunterladen oder klonen.
 2. Adapter in ioBroker installieren (Admin → Instanzen → "+" → passendes Paket/Ordner wählen), analog zu einer manuell installierten Adapter-Version.
 3. Widgets erscheinen in vis-2 unter der Kategorie "Lordener Widgets".
