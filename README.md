@@ -19,4 +19,14 @@ Nach jedem Update: im vis-2-Editor-Tab einmal hart neu laden (Strg+F5), da `cust
 
 ## Quelle
 
-Der React/TypeScript-Quellcode (Vite + Module Federation, Basis: `ioBroker/ioBroker.vis-2-widgets-react-template`) liegt aktuell noch nicht in diesem Repo – nur das fertig gebaute Adapter-Paket.
+Der React/TypeScript-Quellcode (Vite + Module Federation, Basis: `ioBroker/ioBroker.vis-2-widgets-react-template`) liegt unter `src-widgets-ts/`.
+
+Build (auf einem Rechner mit npm-Registry-Zugriff):
+
+```
+cd src-widgets-ts
+npm install
+npm run build
+```
+
+Das Ergebnis landet in `src-widgets-ts/build/` (`customWidgets.js` + `assets/*.js`) und muss anschließend in `widgets/lordener-widgets/` des Adapter-Pakets kopiert werden (überschreibt die vorhandene, fertig gebaute Version im Repo-Root).
