@@ -1,0 +1,18 @@
+{
+    "name": "iobroker.lordener-widgets",
+    "version": "0.10.0",
+    "description": "Lordener's own vis-2 widget collection",
+    "author": "Lordener",
+    "license": "MIT",
+    "keywords": [
+        "ioBroker",
+        "vis-2",
+        "widgets"
+    ],
+    "files": [
+        "admin/",
+        "widgets/",
+        "io-package.json",
+        "LICENSE"
+    ]
+}

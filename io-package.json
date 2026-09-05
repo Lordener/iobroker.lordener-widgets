@@ -1,0 +1,60 @@
+{
+    "common": {
+        "name": "lordener-widgets",
+        "version": "0.10.0",
+        "title": "lordener-widgets",
+        "titleLang": {
+            "en": "Lordener's own vis-2 widgets",
+            "de": "Lordeners eigene vis-2-Widgets"
+        },
+        "desc": {
+            "en": "Collection of custom vis-2 widgets (heating control and future own widgets)",
+            "de": "Sammlung eigener vis-2-Widgets (Heizungsregler und weitere zukuenftige eigene Widgets)"
+        },
+        "authors": [
+            "Lordener"
+        ],
+        "keywords": [
+            "lordener-widgets",
+            "vis-2",
+            "widgets"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "icon": "lordener-widgets.svg",
+        "extIcon": "lordener-widgets.svg",
+        "enabled": true,
+        "loglevel": "info",
+        "mode": "none",
+        "adminUI": {
+            "config": "none"
+        },
+        "onlyWWW": true,
+        "singleton": true,
+        "tier": 3,
+        "type": "visualization-widgets",
+        "connectionType": "local",
+        "dataSource": "poll",
+        "visWidgets": {
+            "lordenerWidgets": {
+                "i18n": "component",
+                "name": "lordenerWidgets",
+                "url": "lordener-widgets/customWidgets.js",
+                "bundlerType": "module",
+                "components": [
+                    "HeizungWidget",
+                    "AlarmWidget",
+                    "RolloWidget",
+                    "FensterWidget"
+                ]
+            }
+        },
+        "restartAdapters": [
+            "vis-2",
+            "vis"
+        ]
+    },
+    "native": {},
+    "objects": [],
+    "instanceObjects": []
+}
